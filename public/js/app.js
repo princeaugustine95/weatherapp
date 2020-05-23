@@ -13,7 +13,7 @@ const place=search.value;
     correctMessage.textContent="";
 
 
-    fetch('http://localhost:3000/weather?address='+place).then((response)=>{
+    fetch('/weather?address='+place).then((response)=>{
 
         response.json().then((data)=>{
 
